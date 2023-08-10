@@ -1,9 +1,15 @@
 import React from 'react'
 
-function List() {
+function List({ onTodo }) {
     return (
-        <div>List</div>
+        <div>
+            <ul>
+                {onTodo.map((item, id) => (
+                    <li key={id}>{item}</li>
+                ))}
+            </ul>
+        </div>
     )
 }
 
-export default List
+export default List;

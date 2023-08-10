@@ -1,11 +1,27 @@
 import React from 'react'
+import { useState } from 'react';
 
-function Input() {
+function Input({ onHandleTodoList }) {
+
+    const [text, setText] = useState('');
+
+    const onText = (e) => {
+        setText(e.target.value)
+    }
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        if (text !== '') {
+            onHandleTodoList(text);
+            setText('')
+        }
+    }
+
     return (
         <div className='header'>
-            <form>
-                <input />
-                <button className='add-btn'>Add</button>
+            <form onSubmit={handleSubmit}>
+                <input name='name' value={text} onChange={onText} />
+                <button className='add-btn' type='submit'>Add</button>
                 <button className='clear-btn'>Clear</button>
             </form>
         </div>
