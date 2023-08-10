@@ -1,11 +1,14 @@
 import React from 'react'
 
-function List({ onTodo }) {
+function List({ onTodo, handleDelete }) {
     return (
         <div>
             <ul>
                 {onTodo.map((item, id) => (
-                    <li key={id}>{item}</li>
+                    <div key={id}>
+                        <li>{item}</li>
+                        <button onClick={() => handleDelete(id)}>Delete</button>
+                    </div>
                 ))}
             </ul>
         </div>
