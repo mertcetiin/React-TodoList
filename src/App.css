@@ -1,7 +1,7 @@
 .App {
     text-align: center;
     justify-content: center;
-    height: 100vh;
+    height: 88vh;
     align-items: center;
 }
 
@@ -15,7 +15,7 @@
 }
 
 .header input {
-    width: 450px;
+    width: 350px;
     height: 35px;
     border-radius: 15px;
     border: 1px solid black;
@@ -27,6 +27,9 @@
     height: 35px;
     border-radius: 15px;
     cursor: pointer;
+    border: none;
+    background-color: green;
+    color: #fff;
 }
 
 .clear-btn {
@@ -35,22 +38,37 @@
     height: 35px;
     border-radius: 15px;
     cursor: pointer;
+    border: none;
+    background-color: rgb(3, 3, 109);
+    color: #fff;
 }
 
 .list-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     margin-top: 55px;
+    font-family: Arial, sans-serif;
 }
 
-li {
-    margin-top: 20px;
-    font-size: 30px;
-    list-style: none;
+.list-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 500px;
+    margin: 10px 0;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 35px;
 }
 
 .delete-btn {
-    width: 75px;
-    height: 35px;
-    border-radius: 15px;
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
     cursor: pointer;
-    margin-left: 350px;
 }

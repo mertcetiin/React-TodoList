@@ -6,10 +6,10 @@ function List({ onTodo, handleDelete }) {
         <div className='list-items'>
             <ul>
                 {onTodo.map((item, id) => (
-                    <div key={id}>
-                        <li>{item}</li>
+                    <li className='list-item' key={id}>
+                        {item}
                         <button className='delete-btn' onClick={() => handleDelete(id)}>Delete</button>
-                    </div>
+                    </li>
                 ))}
             </ul>
         </div>
