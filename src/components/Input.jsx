@@ -1,12 +1,14 @@
 import React from 'react'
 import { useState } from 'react';
 
-function Input({ onHandleTodoList }) {
+function Input({ onHandleTodoList, onFilter }) {
 
     const [text, setText] = useState('');
 
     const onText = (e) => {
         setText(e.target.value)
+        onFilter(e)
+
     }
 
     const handleSubmit = (e) => {
@@ -16,6 +18,7 @@ function Input({ onHandleTodoList }) {
             setText('')
         }
     }
+
 
     return (
         <div className='header'>
