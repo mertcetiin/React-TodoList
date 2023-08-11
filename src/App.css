@@ -1,0 +1,56 @@
+.App {
+    text-align: center;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+
+.App h1 {
+    margin-top: 100px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.header {
+    margin-top: 50px;
+}
+
+.header input {
+    width: 450px;
+    height: 35px;
+    border-radius: 15px;
+    border: 1px solid black;
+}
+
+.add-btn {
+    margin-left: 20px;
+    width: 75px;
+    height: 35px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.clear-btn {
+    margin-left: 20px;
+    width: 75px;
+    height: 35px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.list-items {
+    margin-top: 55px;
+}
+
+li {
+    margin-top: 20px;
+    font-size: 30px;
+    list-style: none;
+}
+
+.delete-btn {
+    width: 75px;
+    height: 35px;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-left: 350px;
+}

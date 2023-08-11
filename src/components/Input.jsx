@@ -1,13 +1,13 @@
 import React from 'react'
 import { useState } from 'react';
+import '../App.css';
 
-function Input({ onHandleTodoList, onFilter }) {
+function Input({ onHandleTodoList }) {
 
     const [text, setText] = useState('');
 
     const onText = (e) => {
         setText(e.target.value)
-        onFilter(e)
 
     }
 
