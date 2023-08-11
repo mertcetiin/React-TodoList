@@ -14,7 +14,8 @@ function Input({ onHandleTodoList }) {
     const handleSubmit = (e) => {
         e.preventDefault();
         if (text !== '') {
-            onHandleTodoList(text);
+            const capitalizedTitle = text.charAt(0).toUpperCase() + text.slice(1)
+            onHandleTodoList(capitalizedTitle);
             setText('')
         }
     }
