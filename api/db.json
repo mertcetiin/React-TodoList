@@ -1,3 +1,12 @@
 {
-    "todo": []
+  "todo": [
+    {
+      "newTodo": "Asdasdasd",
+      "id": 1
+    },
+    {
+      "newTodo": "Asdasasdasd",
+      "id": 2
+    }
+  ]
 }

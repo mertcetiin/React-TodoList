@@ -6,9 +6,9 @@ function List({ onTodo, handleDelete }) {
         <div className='list-items'>
             <ul>
                 {onTodo.map((item, id) => (
-                    <li className='list-item' key={id}>
-                        {item}
-                        <button className='delete-btn' onClick={() => handleDelete(id)}>Delete</button>
+                    <li className='list-item' key={item.id}>
+                        {item.newTodo}
+                        <button className='delete-btn' onClick={() => handleDelete(item.id)}>Delete</button>
                     </li>
                 ))}
             </ul>

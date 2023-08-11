@@ -1,6 +1,7 @@
 import React from 'react'
-import { useState } from 'react';
 import '../App.css';
+import { useState } from 'react';
+
 
 function Input({ onHandleTodoList }) {
 
@@ -21,12 +22,13 @@ function Input({ onHandleTodoList }) {
     }
 
 
+
     return (
         <div className='header'>
             <form onSubmit={handleSubmit}>
                 <input name='name' value={text} onChange={onText} />
                 <button className='add-btn' type='submit'>Add</button>
-                <button className='clear-btn'>Clear</button>
+                <button className='clear-btn' type='submit'>Clear</button>
             </form>
         </div>
     )
