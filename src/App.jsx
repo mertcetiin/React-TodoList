@@ -11,7 +11,7 @@ function App() {
 
   const onTodoList = (newTodo) => {
     setTodo([...todo, newTodo])
-    setFilteredTodo([...todo, newTodo]);
+    setFilteredTodo([...todo, firstUpperCase(newTodo)]);
   };
 
   const onHandleDelete = (index) => {
@@ -20,6 +20,9 @@ function App() {
 
   };
 
+  const firstUpperCase = (letter) => {
+    return letter.charAt(0).toUpperCase() + letter.slice(1)
+  }
 
   const onFilter = (e) => {
     const filtered = todo.filter((item) =>
