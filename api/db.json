@@ -1,12 +1,20 @@
 {
   "todo": [
     {
-      "newTodo": "Asdasdasdasd",
+      "newTodo": "Ödevi yap",
       "id": 1
     },
     {
-      "newTodo": "Ssadsda",
+      "newTodo": "Sunumu hazırla ",
       "id": 2
+    },
+    {
+      "newTodo": "Kitap oku",
+      "id": 3
+    },
+    {
+      "newTodo": "Ders çalış",
+      "id": 4
     }
   ]
 }
