@@ -33,13 +33,6 @@ These steps include the basic instructions for running the project on your local
    npm install axios 
    npm run dev
 
-### Getting Started
-First, run the development server:  
-* npm install
-* npm install -g json-server
-* json-server --watch db.json
-* npm install axios 
-* npm run dev
 
 ```markdown
 ## Features
