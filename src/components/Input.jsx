@@ -3,7 +3,7 @@ import '../App.css';
 import { useState } from 'react';
 
 
-function Input({ onHandleTodoList }) {
+function Input({ onHandleTodoList, onHandleClear }) {
 
     const [text, setText] = useState('');
 
@@ -21,14 +21,12 @@ function Input({ onHandleTodoList }) {
         }
     }
 
-
-
     return (
         <div className='header'>
             <form onSubmit={handleSubmit}>
                 <input name='name' value={text} onChange={onText} />
                 <button className='add-btn' type='submit'>Add</button>
-                <button className='clear-btn' type='submit'>Clear</button>
+                <button className='clear-btn' onClick={onHandleClear}>Clear</button>
             </form>
         </div>
     )

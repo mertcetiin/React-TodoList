@@ -32,10 +32,21 @@ function App() {
     setTodo(newTodoDelete)
   };
 
+  const onHandleClear = async () => {
+    try {
+      for (const item of todo) {
+        await axios.delete(`http://localhost:3000/todo/${item.id}`)
+      }
+      setTodo([])
+    } catch (error) {
+      console.log('Error clearing todo:', error)
+    }
+  };
+
   return (
     <div className='App'>
       <h1>TodoList</h1>
-      <Input onHandleTodoList={onTodoList} />
+      <Input onHandleTodoList={onTodoList} onHandleClear={onHandleClear} />
       <List onTodo={todo} handleDelete={onHandleDelete} />
     </div>
   )
