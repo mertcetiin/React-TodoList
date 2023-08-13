@@ -10,7 +10,7 @@ This project aims to create a simple Todo list application using React. Users ca
 
 ## Project Link
 
-[Live Demo](https://your-project-demo-url.com)
+[Live Demo](https://react-todolist-sigma-five.vercel.app)
 
 ## Getting Started
 
