@@ -4,6 +4,14 @@
 
 This project aims to create a simple Todo list application using React. Users can add new tasks, view existing tasks, and delete them.
 
+## Project Screenshot
+
+![image](https://github.com/mertcetiin/React-TodoList/assets/102957602/a2071f90-2a35-430e-b9ff-0d66f5191a24)
+
+## Project Link
+
+[Live Demo](https://your-project-demo-url.com)
+
 ## Getting Started
 
 These steps include the basic instructions for running the project on your local machine.
