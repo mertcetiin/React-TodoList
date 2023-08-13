@@ -1,6 +1,6 @@
 # React + Vite
 
-# React Todo App
+# Todo App
 
 With this application, users can add new tasks, view and delete existing tasks.
 
