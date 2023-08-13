@@ -2,7 +2,7 @@
 
 # React Todo App
 
-This project aims to create a simple Todo list application using React. Users can add new tasks, view existing tasks, and delete them.
+With this application, users can add new tasks, view and delete existing tasks.
 
 ## Project Screenshot
 
