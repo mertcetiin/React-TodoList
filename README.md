@@ -29,7 +29,7 @@ These steps include the basic instructions for running the project on your local
    ```bash
    npm install
    npm install -g json-server
-   json-server --watch db.json
+   json-server --watch api/db.json
    npm install axios 
    npm run dev
 
